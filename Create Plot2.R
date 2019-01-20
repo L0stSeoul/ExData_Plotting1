@@ -25,7 +25,7 @@ ip <- cbind(dateTime, ip)
 ip$dateTime <- as.POSIXct(dateTime)
 
 ## Create the Plot 2
-plot(t$Global_active_power~t$dateTime, type="l", ylab="Global Active Power (kilowatts)", xlab="")
+plot(ip$Global_active_power~ip$dateTime, type="l", ylab="Global Active Power (kilowatts)", xlab="")
 
 ##Create PNG
 dev.copy(png,"plot2.png", width=480, height=480)
